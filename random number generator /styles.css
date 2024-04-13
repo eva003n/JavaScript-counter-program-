@@ -1,0 +1,25 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding: 0;
+}
+body{
+   text-align:center;
+   font-family:verdana;
+
+}
+#rolldicebtn{
+  padding:.75em;
+  font-weight:900;
+  border-radius:25%;
+  font-size:1em;
+  
+}
+.label{
+  font-size:3em;
+}
+#submit{
+  padding:.40em;
+  font-size:1rem;
+}
+
