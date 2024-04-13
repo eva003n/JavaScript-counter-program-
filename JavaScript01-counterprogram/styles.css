@@ -1,0 +1,32 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+#count{
+display: block;
+ text-align:center;
+ font-size:10rem;
+ font-family:serif;
+ 
+}
+#btncontainer{
+  display:flex;
+  justify-content:center;
+ gap:10px;
+}
+.buttons{
+  padding:.75em;
+  width:8em;
+  background: linear-gradient(45deg,#7F3CBA,#3C61BA);
+  color:whitesmoke;
+  font-weight:900;
+  border-radius:5px;
+  transition: background 0.15s,transform 1s;
+
+}
+.buttons:hover{
+  background:#AA3CBA;
+  transform:translateY(0.75rem);
+  
+}
