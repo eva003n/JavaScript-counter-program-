@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <title>password generator</title>
+</head>
+
+<body>
+  <div class="container">
+  <h2 class="title">Password generator</h2>
+  <input id="resultsDisplayer" type="text" readonly>
+  <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"/></svg>
+  <br>
+  <label>Password-Length: <span id="length-label">12</span
+   </label>
+  
+     <input type="range"id="length"max=32 min="4" oninput="updateLengthDisplayed()"placeholder="4-32">
+    <br>
+    
+    <h4>Include:</h4>
+    
+    <label for="uppercase">Uppercase Letters:  
+      <input type="radio"
+      id="uppercase"name="letter">
+    </label>
+    <br>
+    
+   <label for="lowercase">Lowercase Letters: 
+     <input type="radio" 
+     id="lowercase" name="letters">
+   </label>
+   <br>
+   
+   <label for="special">Special-characters:
+      <input type="radio" id="special" name="character">
+   </label>
+   <br>
+
+    <label for="numbers">Numbers:
+       <input type="radio" id="numbers" name="numbers">
+    </label>
+    <br>
+    <br>
+    
+    
+    <button type="submit" id="submit"  onclick="generatePassword()">Generate</button>
+    <p id="text"></p>
+    
+    </div>
+
+
+    
+  <script src="main.js"></script>
+</body>
+
+</html>

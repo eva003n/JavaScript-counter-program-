@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <title>Simple Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+  <h2>Simple Calculator</h2>
+  <label for="firstNumber">FirstNumber:
+  <input type="number" id="firstNumber"value="0">
+  </label>
+  
+  <label for="operator">Operator[<strong id="operatorLabel">÷,+,-,%,×,^</strong>] :
+     <input type="text"  id="operator" value="+">
+    </label>
+    
+  
+    <label for="secondNumber">SecondNumber:
+  <input type="number"value="0" id="secondNumber">
+  
+  <br>
+  <br>
+  
+    <label for="results">Results:
+      <input type="number" readonly id="results">
+    </label>
+    
+    
+    <button type="submit"id="submit">Calculate</button>
+  
+    <p id="text"></p>
+    </div>
+  
+<script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+*{
+  box-sizing :border-box;
+  padding:0;
+  margin: 0;
+}
+body{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  background: linear-gradient(45deg,#5312E5,#DA12E5);
+
+  
+}
+#firstNumber,#secondNumber,#operator{
+  width:90px;
+  height:30px;
+  font-size: 1.5rem;
+  font-family:times Georgia, 'Times New Roman', Times, serif;
+  outline-color:whitesmoke;
+  outline-offset:2px;
+  border-radius:5px;
+  border:none;
+  text-align:center;
+  font-weight:700;
+}
+
+#results{
+  width:150px;
+  height:30px;
+  border-radius:5px;
+   font-size: 1.5rem;
+  outline-color:#A6E39D;
+ outline-offset:2px;
+  font-weight:700;
+text-align: center;
+border:none;
+}
+label{
+  font-size: 20px;
+  font-family:verdana;
+  font-weight:800;
+ 
+  }
+ .container{
+   display:flex;
+   flex-direction:column;
+   gap:5px;
+   background: burlywood;
+   width:300px;
+   height:300px;
+   border-radius:15px;
+   background: transparent;
+   border-right:1px solid blanchedalmond;
+   border-top:2px solid blanchedalmond;
+
+   box-shadow:-3px 5px 5px #110E28;
+   backdrop-filter:blur(50px);
+
+ }
+ #submit{
+   display:block;
+   width:8em;
+   padding:15px;
+   font-weight:800;
+   font-size:1rem;
+   margin:8px auto;
+   background: linear-gradient(45deg,#0B2184,#9216CF);
+   color:whitesmoke;
+   border:none;
+   transform:translateY(.75rem);
+   transition:transform 900ms;
+border-right:.5px solid white ;
+border-bottom:.5px solid white ;
+
+ }
+ #submit:hover{
+  transform:translateY(3rem)
+
+ }
+ h2{
+   text-align:center;
+   font-family: serif;
+   color:#D29DE3;
+ }
+ strong{
+   color:whitesmoke;
+ }
+ 
+ 
+   
+  
+  

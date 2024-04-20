@@ -1,0 +1,78 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+body{
+  height:100vh;
+  display:flex;
+  justify-content: center ;
+  align-items:center;
+   background: burlywood;
+
+}
+.container{
+  background: burlywood;
+  width:250px;
+  aspect-ratio:1;
+  display:flex;
+  flex-direction: column;
+  justify-content: center ;
+  align-items:center;
+   border-radius:10px;
+background: transparent ;
+backdrop-filter:blur(20px);
+box-shadow:3px 8px 5px  black;
+border-left:3px solid white;
+border-top:3px solid white;
+
+}
+.title{
+    font-size:1.5rem;
+    color:blue;
+  font-weight:800;
+  font-family:serif;
+  text-align: center;
+
+  
+}
+#textbox{
+  height:15%;
+  border:none;
+  font-size:1.1em;
+  outline-color:black;
+  outline-offset:3px;
+  text-align: center ;
+  background:whitesmoke;
+}
+.label{
+  font-size:1rem;
+  font-family:times Georgia, 'Times New Roman', Times, serif;
+  font-weight:800;
+  color:black;
+  
+}
+#submit{
+  width:50%;
+  height:18%;
+  font-size:1.1em;
+  text-align:center;
+  font-weight:bolder;
+  background:linear-gradient(45deg,#6348B7,#B748AD);
+    border-radius:5px;
+    color:whitesmoke;
+    transition:background 1s;
+}
+#submit:active{
+  background: transparent;
+}
+#results{
+    font-weight:bolder;
+      font-size:1.3em;
+      color:black;
+
+
+}
+input{
+  background:blue;;
+}

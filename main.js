@@ -65,7 +65,7 @@ let minValue=Math.max(d,e,f);
 
 console.log(minValue);*/
 
-let age;
+/*let age;
 let submitbtn=document.getElementById('submit');
 let display=document.getElementById('text');
 
@@ -116,7 +116,153 @@ else if(payPal.checked) {
 else{
   result.textContent='You must select a payment'
 }
+}*/
+
+//string methods-used to manipulate strings
+/*let username="Evan";
+username.charAt(1);
+console.log(username.charAt(1)
+)//uses an index to access a character 
+let username1='nancy';
+username.indexOf('a');
+console.log(username.indexOf('a')
+)
+
+let name='  warren';
+name=name.trim();
+console.log(name);//remove the whitespace infront or any whitespace */
+
+/*name=name.toUpperCase();
+console.log(name);
+
+name=name.toLowerCase();
+console.log(name);
+
+name=name.repeat(4);
+console.log(name);
+
+let user=" evanngugi";
+
+let result=user.startsWith(' ')
+if (result) {
+  console.log('your name cannot start with a space');
+  
+}else{
+  console.log(`hello,${user}`);
 }
+result=user.endsWith(' ')
+if(result){
+  console.log('your name cannot end with a space');
+}else{
+    console.log(`hello,${user}`);
+
+}
+result=user.includes(' ')
+if(result){
+  console.log('your name cannot include  a space');
+}else{
+    console.log(`hello,${user}`);
+
+}
+result=user.replace(' ','/');
+console.log(result);
+
+result=user.slice(0,5);
+console.log(result);
+
+ let userinput=window.prompt('enter your username:');*/
+/*userinput=userinput.trim(' ');
+  let letter = userinput.charAt(0)
+letter=letter.toUpperCase();
+let output=userinput.slice(1);
+output.toLowerCase();
+let displaytxt=letter+=output;
+alert(displaytxt);*/
+
+//simplify using method chaining
+/*const displaynewtxt=userinput.charAt(0).toUpperCase()+userinput.slice(1).toLowerCase();
+console.log(displaynewtxt*/
+
+
+/*let random=Math.random();
+console.log(random);
+console.log(random);
+ random=Math.random()*10;
+ console.log(random);
+let random1=document.getElementById("random1");
+let shownum=document.getElementById('shownum');
+
+const max=10;
+const min =1;
+random1.onclick=function () {
+  random1=Math.floor(Math.random()*max)+min;
+  shownum.textContent=random1;
+}
+const max1=100;
+const min1=50;
+let guess=Math.floor(Math.random()*(max1-min1)+min1);
+console.log(guess);*/
+
+//guessing game 
+/*
+const min=1;
+const max=10;
+let answer;
+let playing=true;
+let attempts=0;
+let guess;
+while (playing) {
+  answer=Math.floor(Math.random()*(max-min+1));
+
+let guess =window.prompt(`Enter your lucky number between ${min}-${max}`);
+guess=Number(guess);
+if(isNaN(guess)){
+  window.alert(`guess is an invalid entry.`)
+  
+}
+else if (guess<min||guess>max) {
+  window.alert('guess is not within the specified range.')
+}
+if (guess>answer) {
+  window.alert(`${guess} is too high try again`);
+  attempts++;
+}
+else if (guess<answer) {
+    window.alert(`${guess} is too low, try again`);
+
+}
+else{
+    window.alert(`${guess} is correct after ${attempts} attempts`);
+playing=false;
+
+}
+}*/
+
+//functions
+//determine if even or odd
+
+function determine(number) {
+  if(number%2===0){
+    console.log(`${number} is an even number.`);
+  }else{
+    console.log(`${number} is odd.`)
+  }
+}
+determine(9);
+function iseven(num) {
+  return(num%2===0)? true:false;
+}
+console.log(iseven(7));
+function isemail(email) {
+  return (email.includes('@'))?"valid":"invalid";
+   
+ 
+}
+
+console.log(isemail('evanngugi547@gmail.com'));
+
+
+
 
 
 
