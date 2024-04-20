@@ -1,0 +1,58 @@
+*{
+  box-sizing:border-box;
+ margin:0;
+ padding:0;
+}
+html{
+  font-size:16px;
+}
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family: l"poppins"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background:#28282D;
+  font-size:2rem;
+}
+.container{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  width:350px;
+  height:350px;
+  background:whitesmoke;
+  border-radius:4%;
+  gap:30px;
+  backdrop-filter:blur(20px);
+  border:2px solid whitesmoke;
+  
+}
+input{
+  width:80%;
+  height:12%;
+  font-size:1rem;
+  border:2px solid black;
+  border-radius:5px;
+  outline:none;
+  font-size:1rem;
+  
+}
+button{
+  width:50%;
+  height:13%;
+  font-size:1rem;
+  font-weight:800;
+ margin-bottom:3px;
+ background:#6575DE;
+ color:white;
+ border:none;
+   border-radius:5px;
+
+}
+p{
+  font-family:times Georgia, 'Times New Roman', Times, serif;
+  font-weight:600;
+}
+
