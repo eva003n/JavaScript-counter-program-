@@ -39,7 +39,9 @@ const number2 =Number(secondNumber.value)
     case '^':
      result=Math.pow(number1,number2)
       break;
-          
+      
+      default:
+      operator.value='invalid'
   }
 
 return results.value=result;
