@@ -1,0 +1,37 @@
+*{
+  box-sizing:border-box;
+  padding:0;
+  margin:0;
+}
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+   align-items:center;
+
+
+  
+}
+div{
+  width: 200px;
+  height:200px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+button{
+  width:50%;
+  height:20%;
+  font-size:1rem;
+  font-weight:800;
+  background:linear-gradient(90deg,#A2398E,#932A9F);
+  border-radius:8%;
+  border:none;
+  box-shadow:3px 5px 15px #932A9F;
+  color:#FCF9FC;
+  
+  
+}
+
+
+  

@@ -1,0 +1,26 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+}
+
+button{
+ width:100px;
+ height:40px;
+ font-size:1.5rem;
+ font-weight:800;
+ background:#404CC8;
+ border:none;
+ border-radius:10px;
+ box-shadow:-3px 3px 10px #201E23;
+ color:white;
+ 
+}
+

@@ -1,0 +1,147 @@
+:root{
+  --btnclr:#F692EF;
+  --btntxtclr:blueviolet;
+  --inputbgdclr:transparent;
+  --deletebtntxtclr:ghostwhite;
+  --inputtxtclr:whitesmoke;
+  --deletebtnbgdclr:blueviolet;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  
+}
+html{
+  font-size:16px;
+}
+body{
+   display:flex;
+   flex-direction: column ;
+   height:100vh;
+   align-items:center;
+   background:linear-gradient(to bottom right,#6889Ff,#C668Ff);
+
+
+ 
+}
+.head{
+  background:linear-gradient(45deg,#720CE6,#D80BC9);
+  background-clip:text;
+  color: transparent ;
+  font-weight:900;
+  font-size:3rem;
+  font-family:times 'Times New Roman', Times, serif;
+  font-style:italic;
+  
+  letter-spacing:2px;
+}
+
+#todoEntry,.labelTxt{
+  font-size:1.2rem;
+  
+}
+#todoEntry{
+  width:220px;
+  outline:none;
+  height:38px;
+  background:var(--inputbgdclr);
+  border:none;
+  color:var(--inputtxtclr);
+  border-radius:10px;
+  
+}
+.labelTxt{
+  font-weight:800;
+}
+.btnContainer{
+   width:300px;
+   margin:10px auto;
+       text-align: center;;
+
+  }
+  .btn{
+    width:100%;
+    height:38px;
+    font-size:1.3rem;
+    font-weight:bolder;
+    border-radius:5px;
+    background:var(--btnclr);
+    border:none;
+    color:var(--btntxtclr);
+    font-weight:800;
+    padding:5px 0;
+    letter-spacing:2px;
+    font-family:times Georgia, 'Times New Roman', Times, serif;
+    cursor:pointer;
+    transition:opacity 0.15s,background 0.15s;
+
+  }
+  .btn:active{
+    opacity:0.5;
+  }
+  
+  @keyframes addbtn{
+    0%{
+      transform:translateX(0) rotateX(0deg);
+    }
+    25%{
+       transform:translateX(2px) rotateX(2deg);
+
+      }
+      
+    50%{
+       transform:translateX(-2px) rotateX(-2deg);
+ 
+    } 
+    75%{
+      transform:translateX(2px) rotateX(2deg);
+
+    }
+    100%{
+      transform:translateX(0) rotateX(0deg);
+
+    }
+      
+  }
+.todoBox{
+  width:340px;
+  height:100%;
+  border-right:1px solid whitesmoke;
+  border-top:1px solid whitesmoke;
+
+  margin:0 auto;
+  border-radius:20px;
+  backdrop-filter:blur(40px);
+  background: transparent;
+  box-shadow:-5px 5px 15px rgba(0,0,0,0.4);
+
+  
+}
+.para,.checkbox,.deleteBtn{
+display: inline-block;  
+}
+.checkbox{ 
+  cursor:pointer;
+
+}
+
+.deleteBtn{
+  padding:4px;
+  background:var(--deletebtnbgdclr);
+  color:var(--deletebtntxtclr);
+  font-weight:500;
+  border:none;
+  border-radius:5px;
+  height:35px;
+  }
+.para,.checkbox,.deleteBtn{
+  margin:10px 3px 15px 5px;
+  vertical-align: center ;
+}
+.para,.deleteBtn{
+  font-size:1.2rem;
+  letter-spacing:2px;
+  color:white;
+  font-weight:500;
+}

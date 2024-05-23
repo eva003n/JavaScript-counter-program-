@@ -22,11 +22,11 @@ body{
   align-items:center;
   width:350px;
   height:350px;
-  background:whitesmoke;
+  background:linear-gradient(to bottom left,#6889Ff,#C668FF);
   border-radius:4%;
   gap:30px;
   backdrop-filter:blur(20px);
-  border:2px solid whitesmoke;
+  border:2px solid black;
   
 }
 input{
@@ -36,6 +36,7 @@ input{
   border:2px solid black;
   border-radius:5px;
   outline:none;
+  border:none;
   font-size:1rem;
   
 }
@@ -49,6 +50,11 @@ button{
  color:white;
  border:none;
    border-radius:5px;
+
+}
+button:hover{
+  box-shadow:4px 5px 30px  #6575DE;
+  cursor: pointer;
 
 }
 p{
